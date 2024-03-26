@@ -16,7 +16,7 @@ public class Toy {
         return name;
     }
 
-    public int getWeight () {
+    public int getWeight() {
         return weight;
     }
 

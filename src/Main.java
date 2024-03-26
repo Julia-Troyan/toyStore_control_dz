@@ -21,6 +21,9 @@ public class Main {
         toyStore.put(toys2);
         toyStore.put(toys3);
         System.out.println(toyStore.getToy());
+        System.out.println(toyStore.getToy());
+        System.out.println(toyStore.getToy());
+
 
 
     }

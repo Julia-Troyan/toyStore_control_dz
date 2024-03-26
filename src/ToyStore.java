@@ -4,11 +4,11 @@ import java.util.Queue;
 import java.util.Random;
 
 public class ToyStore {
-    private final PriorityQueue<ArrayList<Toy>> queue = new PriorityQueue<>();
+    private final PriorityQueue<ArrayList<Toy>> queue;
 
-//    public ToyStore(PriorityQueue<ArrayList<Toy>> queue) {
-//        this.queue = queue;
-//    }
+    public ToyStore() {
+        queue = new PriorityQueue<>((t1, t2) -> t2.getFirst().getWeight() - t1.getFirst().getWeight());
+    }
 
     public void put(ArrayList<Toy> toys) {
         this.queue.add(toys);
