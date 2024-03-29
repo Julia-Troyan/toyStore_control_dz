@@ -20,13 +20,16 @@ public class Toy {
         return weight;
     }
 
+
+
     @Override
     public String toString() {
         return "Toy{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", weight=" + weight +
-                '}';
+                "%}";
     }
+
 }
 
